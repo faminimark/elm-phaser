@@ -1,0 +1,22 @@
+{
+  "name": "noframeworktest",
+  "version": "0.0.1",
+  "description": "Test API and routes",
+  "main": "view",
+  "dependencies": {
+    "body-parser": "^1.13.3",
+    "glob": "^5.0.14",
+    "express": "^4.13.1",
+    "fs": "^0.0.2",
+    "async": "^1.4.2",
+    "lodash": "^3.10.1",
+    "mongodb": "^2.0.41",
+    "mongoose": "^4.1.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mark Famini",
+  "license": "MIT"
+}

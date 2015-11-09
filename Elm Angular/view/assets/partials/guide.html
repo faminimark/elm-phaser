@@ -1,0 +1,21 @@
+<md-content layout="column">
+	<md-card>
+		<md-card-content class="layout-wrap layout-sm-column layout-align-center-center layout-row" ng-repeat="guide in guides" ng-show="guide.order==page">
+			<div flex="60" flex-sm="100">
+				<img flex="90" class="md-card-image" src="{{guide.url}}">
+			</div>
+			<div flex-sm="100" flex="40">
+				<h2 class="md-title" flex="100">{{guide.title}}</h2>
+				<p ng-bind-html="guide.body | TrustHtml"></p>
+			</div>
+	
+			<hr/>
+		</md-card-content>
+		 <div class="bottom-sheet-demo inset" layout="row" layout-align="center" >
+		    <md-button flex="50" class="md-raised md-secondary" ng-click="prev()">Previous</md-button>
+			<md-button flex="50" class="md-raised md-primary" ng-click="next()">Next</md-button>
+		    
+		  </div>
+		
+	</md-card>
+</md-content>

@@ -1,0 +1,36 @@
+
+		<md-content>
+				<md-toolbar class="md-primary">
+					<header class="md-toolbar-tools">
+						<h1 class="md-headline">Material 101</h1>
+					</header>
+				</md-toolbar>
+			<md-card>
+				<md-card-content>
+				<h2 class="md-title">A Guide to Google's Material</h2>
+					<form id="infoSheet" novalidate class="info-sheet" method="POST">
+						<fieldset layout layout-sm="column">
+							<legend class="md-subhead">Please Save your Credentials</legend>
+							<md-input-container>
+							<label for="empId">Employee ID: </label>
+							<input ng-model="user.EmpID" id="empId" type="text"/>
+							</md-input-container>
+							<md-input-container>
+							<label for="firstName">First Name: </label>
+							<input ng-model="user.firstName" id="firstName" type="text">
+							</md-input-container>
+							<md-input-container>
+							<label for="lastName">Last Name: </label>
+							<input ng-model="user.lastName" id="lastName" type="text"/>
+							</md-input-container>
+						</fieldset>
+					</form>
+					<md-button ng-click="save(user)" class="md-raised md-primary">Continue</md-button>
+					<!-- <button id="save" class="md-raised md-primary md-button md-ink-ripple" >Save</button> -->
+				</md-card-content>
+			</md-card>
+		</md-content>
+
+
+
+	<!-- <button id="edit" class="btn btn-sm btn-warning" onclick="UserEvent.List()">List</button> -->
